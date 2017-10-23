@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:text="通过LayoutInflater动态加载布局，并且Button是跟布局"
+    android:layout_height="80dp">
+<!--这个Button外面没有嵌套任何布局，因此其中的layout_width 没有任何效果   这个是为什么叫layout_width的原因-->
+</Button>
