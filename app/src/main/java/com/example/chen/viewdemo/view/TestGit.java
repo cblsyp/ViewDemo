@@ -6,5 +6,6 @@ package com.example.chen.viewdemo.view;
 
 public class TestGit {
     private String name;
+    private String sex;
 
 }
