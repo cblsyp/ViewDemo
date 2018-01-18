@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chen.viewdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.chen.viewdemo.activity.TestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.chen.viewdemo.MainActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.RecyclerViewActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.FrescoActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.CanvasDemoActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.TestCricleViewActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.GeoviewActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.DaojishiActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.DialogActivity" />
+        <activity android:name="com.example.chen.viewdemo.activity.SeekBarActivity" />
+    </application>
+
+</manifest>
