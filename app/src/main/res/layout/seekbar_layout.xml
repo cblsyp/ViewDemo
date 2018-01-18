@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.chen.viewdemo.view.CountdownView
+        android:id="@+id/countdown"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal" />
+
+    <com.example.chen.viewdemo.view.CustView
+        android:id="@+id/cv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/butt_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始监听" />
+
+    <TextView
+        android:id="@+id/tv_def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deault Seekbar" />
+
+    <SeekBar
+        android:id="@+id/seekbar_def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10" />
+
+    <TextView
+        android:id="@+id/tv_self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义SeekBar" />
+
+    <SeekBar
+        android:id="@+id/seekbar_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        android:progressDrawable="@drawable/bg_bar"
+        android:thumb="@drawable/thumb_bar" />
+
+    <!--android:thumb  =" 设置seekbar滑动的图片
+    android：pregressDrawable=" " 进度条背景颜色   -->
+
+    <SeekBar
+        android:id="@+id/seekbar_self02"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="50dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/bg_bar_002"
+        android:thumb="@null" />
+
+    <Button
+        android:id="@+id/button_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="代码设置Seekbar的范围" />
+
+
+    <ProgressBar
+
+        android:id="@+id/progresss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@drawable/item_shape" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="12dp"
+            android:background="@drawable/item_02_shape" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

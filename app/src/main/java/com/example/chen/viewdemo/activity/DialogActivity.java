@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import com.example.chen.viewdemo.R;
 import com.example.chen.viewdemo.dialog.MyDialog;
 import com.example.chen.viewdemo.dialog.SelectDialog;
+import com.example.chen.viewdemo.view.CountdownView;
 
 /**
  * Created by shuiyanping on 2017/12/6.
@@ -22,6 +23,7 @@ import com.example.chen.viewdemo.dialog.SelectDialog;
 
 public class DialogActivity extends Activity {
     private static  final String TAG="chen debug";
+    CountdownView countdownView;
     private Button button1;
     SelectDialog selectDialog;
     private Context context;
@@ -32,6 +34,7 @@ public class DialogActivity extends Activity {
         setContentView(R.layout.dialog_layout);
         button1= (Button) findViewById(R.id.button1);
         context=this;
+
         testsimpledialog();
         initView();
     }
